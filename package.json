@@ -1,0 +1,45 @@
+{
+  "name": "jt-components",
+  "version": "1.0.3",
+  "description": "毕昇前端组件库",
+  "keywords": [
+    "vue",
+    "vue3",
+    "design",
+    "vueComponent",
+    "component",
+    "components",
+    "ui",
+    "frontend"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/jt-components.umd.js",
+  "module": "./lib/jt-components.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/jt-components.umd.js",
+      "require": "./lib/jt-components.es.js"
+    },
+    "./lib/*":"./lib/*"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.0",
+    "ant-design-vue": "^2.2.8",
+    "jt-components": "1.0.2-beta",
+    "less": "^4.1.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "vite-plugin-components": "^0.13.3",
+    "vue-tsc": "^0.3.0"
+  }
+}
